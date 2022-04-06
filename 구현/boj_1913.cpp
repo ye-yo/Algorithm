@@ -35,10 +35,10 @@ Position move(Position pos)
 {
   Position temp = {pos.x, pos.y, pos.direction};
   temp = getNextPosition(temp);
-  int prevX = temp.x;
-  int prevY = temp.y;
+  int nextX = temp.x;
+  int nextY = temp.y;
 
-  if(prevX >= N || prevY >= N || prevX < 0 || prevY < 0 || arr[prevX][prevY] > 0){
+  if(nextX >= N || nextY >= N || nextX < 0 || nextY < 0 || arr[nextX][nextY] > 0){
     pos.direction = pos.direction >= 4 ? 1 : ++pos.direction;
     pos = getNextPosition(pos);
     return pos;
