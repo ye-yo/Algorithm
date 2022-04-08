@@ -22,6 +22,8 @@ vector<int> solution(vector<int> progresses, vector<int> speeds) {
             day++; //day 증가
         }
     }
+    if(completedCount > 0)
+        answer.push_back(completedCount);
     return answer;
 }
 
