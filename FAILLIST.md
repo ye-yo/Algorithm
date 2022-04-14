@@ -1,4 +1,0 @@
-- [[BOJ] 1959번 - 달팽이3](https://www.acmicpc.net/problem/1959)
-- [[BOJ] 4577번 - 소코반](https://www.acmicpc.net/problem/4577)
-- [[BOJ] 2064번 - IP 주소](https://www.acmicpc.net/problem/2064)
-- [[BOJ] 20057번 - 마법사 상어와 토네이도](https://www.acmicpc.net/problem/20057)
