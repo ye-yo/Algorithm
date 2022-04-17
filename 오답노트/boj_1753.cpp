@@ -33,16 +33,17 @@ int main(void){
     dist[start] = 0;
     while(!pq.empty()){
         int index = (pq.top()).first;
+        int cost = pq.top().second;
         pq.pop();
         visited[index] = 1;
+        if(visited[index]) continue;
         for(int j = 0; j< map[index].size(); j++){
             pair<int,int> next = map[index][j];
             int nextNode = next.first;
-            if(visited[nextNode]) continue;
             int nextWeight = next.second;
-            if(dist[nextNode] > dist[index] + nextWeight){
-                dist[nextNode] = min(dist[nextNode], dist[index] + nextWeight);
-                pq.push(next);
+            if(dist[nextNode] > cost + nextWeight){
+                dist[nextNode] = cost + nextWeight;
+                pq.push({nextNode,cost + nextWeight});
             }
         }
     }
